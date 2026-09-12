@@ -37,19 +37,14 @@ module "grafana" {
   depends_on = [module.prometheus]
 }
 
-module "ingress" {
-  source = "./modules/ingress"
+module "sonarqube" {
+  source = "./modules/sonarqube"
   depends_on = [module.grafana]
 }
 
-module "blockscout" {
-  source = "./modules/blockscout"
-  depends_on = [module.ingress]
-
-  blockscout_postgresql_password = var.blockscout_postgresql_password
-  blockscout_rpc_url              = var.blockscout_rpc_url
-  blockscout_network              = var.blockscout_network
-  blockscout_hostname             = var.blockscout_hostname
+module "ingress" {
+  source = "./modules/ingress"
+  depends_on = [module.sonarqube]
 }
 
 
