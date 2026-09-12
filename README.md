@@ -1,20 +1,21 @@
-<img width="2048" height="1024" alt="image" src="https://github.com/user-attachments/assets/c77a6669-1684-463a-8aec-1bfb1e3cd620" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2c336c4a-b668-4264-8883-b957de7723e9" />
 
 
 
-## AWS | EKS Blockscout
-Blockscout is an open-source blockchain explorer for inspecting EVM chains, with support for 1000+ L1s, L2s, L3s, optimistic rollups, and ZK rollups.
+## AWS | EKS SonarQube
+SonarQube is a code quality and application security platform. It analyzes your source code and finds problems before the code reaches production.
 
 
 
 🎯 Architecture Overview
 ```
-✅ VPC containing , Public+Private Subnets , NAT Gateway
-✅ EKS Cluster Provisioner Workflow 
-✅ Minio S3 Object Storage 
-✅ Velero Disaster Recovery
-✅ Velero UI Interface
-✅ Local Exec ( Logical Workloads )
+🔐 Security vulnerabilities — insecure code that attackers could exploit
+🐛 Bugs — code likely to cause runtime problems
+🧹 Code smells — code that is difficult to maintain or unnecessarily complex
+📋 Duplicated code
+🧪 Test coverage — how much code is covered by tests
+📐 Code quality — maintainability and reliability
+🔎 Security Hotspots — code that requires security review
 ```
 
 
